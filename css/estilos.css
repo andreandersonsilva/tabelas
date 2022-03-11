@@ -1,0 +1,34 @@
+body{
+    font-size:14px;
+    font-family:Arial, sans-serif;
+}
+
+.tabela{
+    width: 100%;
+    /*Todas as tabelas por padrão vem com um pequeno espaço entre elas e para remover utilizamos o collapse*/
+    border-collapse: collapse;   
+}
+
+.tabela td, .tabela th{
+    padding: 15px 10px;
+    border:1px solid #ccc;
+}
+
+.tabela th{
+    background-color: #ececec;
+
+    font-size:1.1em;
+    text-align:left;
+}
+
+/*Aqui foi inserido uma sub-classe para dar efeito de zebra na tabela*/
+.tabela tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+
+/*Aqui foi inserida uma sub-classe para quando o mouse passar por cima da linha mudar a cor da linha, porém, por motivo de especifissidade, este código deve ficar abaixo do de cima, senão as linhas modificadas pelo código de cima, não vão ter suas cores alteradas quando o mouse passar*/
+.tabela tr:hover{
+    background-color: #faffcc;
+}
+
+
